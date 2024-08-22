@@ -1,5 +1,12 @@
 <div class="container mt-5">
-    <h1>Accounts Page</h1>
-    <img src="/car.jpg" alt="Car">
+  <h1>Accounts Page</h1>
+  <img src="/car.jpg" alt="Car">
+
+  <!-- Display User Details -->
+  <div *ngIf="user" class="mt-4">
+    <h2>User Details</h2>
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Birthdate:</strong> {{ user.birthdate }}</p>
+    <p><strong>Age:</strong> {{ user.age }}</p>
   </div>
-  
+</div>

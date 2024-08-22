@@ -1,0 +1,22 @@
+<div *ngIf="user">
+    <h2>Edit Profile</h2>
+    <form (ngSubmit)="saveProfile()">
+      <label>
+        Username:
+        <input type="text" [(ngModel)]="user.username" name="username">
+      </label>
+      <br>
+      <label>
+        Birthdate (DD-MM-YYYY):
+        <input type="text" [(ngModel)]="user.birthdate" name="birthdate" placeholder="DD-MM-YYYY">
+      </label>
+      <br>
+      <label>
+        Age:
+        <input type="number" [(ngModel)]="user.age" name="age">
+      </label>
+      <br>
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+  
